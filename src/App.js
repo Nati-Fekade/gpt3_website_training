@@ -4,10 +4,31 @@
 
 import React from 'react'
 
+// instead of importing all the components one by one, an alternative way is to create a .js file 
+// inside components that export them and then: import { Article, Brand, CTA } from './components'
+// BUT for better coding experience, create another folder to hold larger components => containers
+// Think of 'containers' as the bigger section of the page
+// this makes our code much clearer. The below two lines would have been 9 lines
+import {Blog, Features, Footer, Header, Possibility, WhatGPT3} from './containers';
+import {Brand, CTA, Navbar} from './components';
+
+
 const App = () => {
   return (
-    <div>
-      <h1>GPT3-Clone</h1>;
+    <div className = "App">
+      <div className = "gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
+
     </div>
   )
 }
