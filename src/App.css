@@ -1,0 +1,14 @@
+/*    This is our main application style. we are going to implement the general style.   */
+
+/* * = is used to create a style for all components.  */
+
+* { /* This are some styles for all components. */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg); /*This is a css variable for our bgd color. We won't be typing the variable names every time. */
+}
